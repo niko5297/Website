@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>De Grønne Tandteknikere</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <h1 class="brand"><a href="index.html">De<span>Grønne</span>Tandteknikere</a></h1>
+            <ul>
+                <li><a href="#">Om os</a> </li>
+                <li><a href="#">Priser</a></li>
+                <li><a onclick="document.getElementById('id01').style.display='block'" class="login">Tandproteser</a></li>
+                <li><a href="#">Kundetilfredshed</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="../Images/teeth-295404_960_720.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="tabbar">
+                <a class="currenttab">
+                    <span>Login</span>
+                </a>
+                <a  class="newtab">
+                    <span>Sign Up</span>
+
+                    <!-- https://www.latestblog.org/create-fancy-login-signup-form-in-html5-css3/ -->
+                    <!-- Link til at skifte mellem tabs i en Login/Sign From -->
+                </a>
+            </div>
+            <div class="containermodal">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="containermodal" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <script type="text/javascript" src="index.js"></script>
+
+</footer>
+
+</body>
+</html>
